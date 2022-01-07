@@ -5,12 +5,11 @@ class Toggle extends React.Component {
     constructor(props) {
         super(props);
         this.state = {isToggleOn: true};
-
-        // This binding is necessary to make `this` work in the callback
-        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {
+    // This syntax ensures `this` is bound within handleClick.
+    // Warning: this is *experimental* syntax.
+    handleClick = () => {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }));
