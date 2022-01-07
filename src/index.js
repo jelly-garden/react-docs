@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) =>
-        <li>{number}</li>
+        <li key={number.toString()}>
+            {number}
+        </li>
     );
     return (
         <ul>{listItems}</ul>
