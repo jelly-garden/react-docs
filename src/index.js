@@ -7,17 +7,16 @@ class Toggle extends React.Component {
         this.state = {isToggleOn: true};
     }
 
-    // This syntax ensures `this` is bound within handleClick.
-    // Warning: this is *experimental* syntax.
-    handleClick = () => {
+    handleClick() {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }));
     }
 
     render() {
+        // This syntax ensures `this` is bound within handleClick
         return (
-            <button onClick={this.handleClick}>
+            <button onClick={() => this.handleClick()}>
                 {this.state.isToggleOn ? 'ON' : 'OFF'}
             </button>
         );
