@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function tick() {
-    const element = (
-        <div>
-            <h1>Hello, world!</h1>
-            <h2>It is {new Date().toLocaleTimeString()}.</h2>
-        </div>
-    );
-    ReactDOM.render(element, document.getElementById('root'));
+// function Welcome(props) {
+//     return <h1>Hello, {props.name}</h1>;
+// }
+
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
 }
 
-setInterval(tick, 1000);
+ReactDOM.render(<Welcome name="test"/>, document.getElementById('root'));
