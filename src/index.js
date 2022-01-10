@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WelcomeDialog from './docs/welcome_dialog';
+import Content from './docs/content';
 
 ReactDOM.render(
-    <WelcomeDialog />,
+    <Content />,
     document.getElementById('root')
 );

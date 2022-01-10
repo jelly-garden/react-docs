@@ -1,4 +1,5 @@
 import React from 'react';
+import './welcome_dialog.css';
 
 function FancyBorder(props) {
     return (
