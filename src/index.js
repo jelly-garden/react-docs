@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WelcomeDialog from './docs/welcome_dialog';
+import SignUpDialog from './docs/signup-dialog';
 
 ReactDOM.render(
-    <WelcomeDialog />,
+    <SignUpDialog />,
     document.getElementById('root')
 );
