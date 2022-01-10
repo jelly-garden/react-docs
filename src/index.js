@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calculator from './docs/calculator';
+import WelcomeDialog from './docs/welcome_dialog';
 
 ReactDOM.render(
-    <Calculator />,
+    <WelcomeDialog />,
     document.getElementById('root')
 );
